@@ -1,0 +1,5 @@
+<%= form_for @dose, url: {action: "create"} do |f| %>
+  <%= f.label :description %>
+  <%= f.text_field :description %>
+  <%= f.submit "New Dose" %>
+<% end %>

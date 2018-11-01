@@ -1,0 +1,7 @@
+<h1>INDEX</h1>
+
+<% @cocktails.each do |cocktail| %>
+  <p><%= cocktail.name %> | <%= cocktail.id %> | <%= link_to "Show deails", cocktail_path(:id => cocktail.id) %></p>
+<% end %>
+
+<%= link_to "Back", root_path %>

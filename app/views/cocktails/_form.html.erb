@@ -1,0 +1,5 @@
+<%= form_for @cocktail, url: {action: "create"} do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit "New Cocktail" %>
+<% end %>
