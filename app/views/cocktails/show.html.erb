@@ -1,7 +1,7 @@
 <h1><%= @cocktail.name %></h1>
 
 <% @doses.each do |dose| %>
-  <p><%= dose.description %> of <%= dose.ingredient.name %> | <%= link_to "Delete", dose_path(dose.id), :method => :delete %></p>
+  <p><%= dose.ingredient.name.capitalize %> - <%= dose.description %> | <%= link_to "Delete", dose_path(dose.id), :method => :delete %></p>
 <% end %>
 
 <%= link_to "Add new dose",  new_cocktail_dose_path(@cocktail.id) %>
