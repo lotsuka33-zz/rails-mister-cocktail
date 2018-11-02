@@ -8,4 +8,4 @@
   <p><%= ingredient.id %> | <%= ingredient.name %></p>
 <% end %>
 
-<%= link_to "Back", cocktail_path(@cocktail.id) %>
+<%= link_to "Back", cocktail_path(params[:cocktail_id]) %>
