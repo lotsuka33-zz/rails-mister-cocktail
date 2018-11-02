@@ -1,7 +1,9 @@
 <h1>INDEX</h1>
 
 <% @cocktails.each do |cocktail| %>
-  <p><%= cocktail.name %> | <%= cocktail.id %> | <%= link_to "Show deails", cocktail_path(cocktail.id) %></p>
+  <p><%= cocktail.id %>. <%= cocktail.name %> | <%= link_to "Show deails", cocktail_path(cocktail.id) %></p>
 <% end %>
 
-<%= link_to "Back", root_path %>
+<%= link_to "Add a new cocktail", new_cocktail_path %>
+<br>
+<br>
